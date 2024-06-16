@@ -11,6 +11,7 @@ quixstreams = "^2.5.1"
 websocket-client = "^1.8.0"
 loguru = "^0.7.2"
 python-dotenv = "^1.0.1"
+pydantic-settings = "^2.3.3"
 
 
 [tool.poetry.group.dev.dependencies]
