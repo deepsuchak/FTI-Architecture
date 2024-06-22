@@ -11,9 +11,9 @@ from pydantic_settings import BaseSettings
 
 class Config(BaseSettings):
     kafka_broker_address: str = os.environ['KAFKA_BROKER_ADDRESS']
-    feature_group_version: int = 1
-    feature_group_name: str = 'ohlc_feature_group'
-    kafka_topic: str = 'ohlc'
+    feature_group_version: int = os.environ['FEATURE_GROUP_VERSION']
+    feature_group_name: str = os.environ['FEATURE_GROUP_NAME']
+    kafka_topic: str = os.environ['KAFKA_TOPIC']
     hopsworks_project_name: str = os.environ['HOPSWORKS_PROJECT_NAME']
     hopsworks_api_key: str = os.environ['HOPSWORKS_API_KEY']
 

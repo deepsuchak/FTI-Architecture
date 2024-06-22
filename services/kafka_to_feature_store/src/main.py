@@ -8,6 +8,7 @@ def kafka_to_feature_store(
     feature_group_name: str,
     feature_group_version: int
 ) -> None:
+    
     """
     Reads trades from redpanda/kafka topic and saves it to the feature store 
     More specifically, it aggregates trades into OHLC candles and sends them to the feature group
