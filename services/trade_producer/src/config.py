@@ -12,7 +12,7 @@ from pydantic_settings import BaseSettings
 class Config(BaseSettings):
     kafka_broker_address: str = os.environ.get('KAFKA_BROKER_ADDRESS')
     kafka_topic_name: str = 'trade'
-    product_id: str = 'BTC/USD'
+    product_id: str = 'BTC/EUR'
 
 
 config = Config()

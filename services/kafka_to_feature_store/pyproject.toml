@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "kafka-to-feature-store"
+version = "0.1.0"
+description = ""
+authors = ["deepsuchak <suchakdeep@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+quixstreams = "2.5.1"
+loguru = "^0.7.2"
+hopsworks = "^3.7.0"
+python-dotenv = "^1.0.1"
+pydantic-settings = "^2.3.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

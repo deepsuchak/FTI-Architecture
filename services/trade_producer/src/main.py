@@ -37,7 +37,7 @@ def produce_trades(kafka_broker_address: str,
         while True:
             # get trades from Kraken
             trades = kraken_api.get_trades()
-            logger.info('got trades from kraken websocket')
+            # logger.info('got trades from kraken websocket')
             for trade in trades:
                 message = topic.serialize(key=trade['product_id'], value=trade)
 
