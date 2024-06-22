@@ -11,8 +11,20 @@ quixstreams = "^2.5.1"
 python-dotenv = "^1.0.1"
 pydantic-settings = "^2.3.3"
 loguru = "^0.7.2"
+ruff = "0.4.8"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+docstring-code-format = true
+
+[tool.ruff.lint]
+extend-select = ["I"]
