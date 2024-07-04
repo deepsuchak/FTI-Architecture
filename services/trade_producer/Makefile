@@ -1,3 +1,6 @@
+run-dev:
+	poetry run python src/main.py
+
 build:
 	docker build -t trade_producer .
 

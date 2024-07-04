@@ -412,30 +412,32 @@ cli = ["click (>=5.0)"]
 
 [[package]]
 name = "quixstreams"
-version = "2.5.1"
+version = "2.6.0"
 description = "Python library for building stream processing applications with Apache Kafka"
 optional = false
 python-versions = "<4,>=3.8"
 files = [
-    {file = "quixstreams-2.5.1-py3-none-any.whl", hash = "sha256:507cc118625ca4e023951eed9d3f77fd81b018dd03396cbfbff5a3dc024bd3cf"},
+    {file = "quixstreams-2.6.0-py3-none-any.whl", hash = "sha256:a8d72fabcde6b2179bde6d08646c0f7bafe35dab7bd53e8e7556defa87cdbc02"},
 ]
 
 [package.dependencies]
-confluent-kafka = ">=2.2,<2.4"
+confluent-kafka = ">=2.2,<2.5"
 orjson = ">=3.9,<4"
-requests = ">=2.28,<2.32"
+pydantic = ">=2.7,<2.8"
+pydantic-settings = ">=2.3,<2.4"
+requests = ">=2.32"
 rocksdict = ">=0.3,<0.4"
-typing-extensions = ">=4.8,<4.9"
+typing-extensions = ">=4.8"
 
 [[package]]
 name = "requests"
-version = "2.31.0"
+version = "2.32.3"
 description = "Python HTTP for Humans."
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "requests-2.31.0-py3-none-any.whl", hash = "sha256:58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f"},
-    {file = "requests-2.31.0.tar.gz", hash = "sha256:942c5a758f98d790eaed1a29cb6eefc7ffb0d1cf7af05c3d2791656dbd6ad1e1"},
+    {file = "requests-2.32.3-py3-none-any.whl", hash = "sha256:70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6"},
+    {file = "requests-2.32.3.tar.gz", hash = "sha256:55365417734eb18255590a9ff9eb97e9e1da868d4ccd6402399eaf68af20a760"},
 ]
 
 [package.dependencies]

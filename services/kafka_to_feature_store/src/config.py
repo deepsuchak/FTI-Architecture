@@ -8,7 +8,9 @@ load_dotenv(find_dotenv())
 
 from pydantic_settings import BaseSettings
 
-
+## the reason to use pydantic_settings is that once we define the Config(BaseSettings) class, 
+## the config will be automatically loaded from the .env file
+## and we do not need to write ""os.environ['KAFKA_BROKER_ADDRESS']"" it will automatically load the .env file
 class Config(BaseSettings):
     kafka_broker_address: str = os.environ['KAFKA_BROKER_ADDRESS']
     feature_group_version: int = os.environ['FEATURE_GROUP_VERSION']
